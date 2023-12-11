@@ -10,7 +10,7 @@ socket.on("clients-total", (data) => {
   clientsTotal.innerText = `Connected people: ${data}`;
 });
 
-socket.on("chat-message", (data) => {
+socket.on("message", (data) => {
   addMessageToUI(false, data);
 });
 
